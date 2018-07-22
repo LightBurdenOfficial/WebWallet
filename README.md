@@ -33,9 +33,9 @@ Planned Features:
 
 More Information:
 
-Created by Johnathan Martin of fitbobcat.com
+Created by Johnathan Martin of fitbobcat.com<br>
 Edited by SperoCoin - DigitalCoinBRL Developers
 
-Website SperoCoin: https://sperocoin.ddns.net
+Website SperoCoin: https://sperocoin.ddns.net<br>
 Being used in the following domain: https://sperocoin.ddns.net/webwallet/index.php
 # WebWallet
