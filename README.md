@@ -1,6 +1,8 @@
 piWallet
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d6cddd07f20e4d11840a35bd7f23ce78)](https://app.codacy.com/app/DigitalCoin1/WebWallet?utm_source=github.com&utm_medium=referral&utm_content=DigitalCoin1/WebWallet&utm_campaign=Badge_Grade_Dashboard)
+
 piWallet is a secure opensource online altcoin wallet that works with practically any altcoin. piWallet uses PHP, mySQL, JavaScript and Bootstrap.
 
 Setup: https://github.com/johnathanmartin/piWallet/wiki/Installation
