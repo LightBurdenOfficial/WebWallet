@@ -107,7 +107,7 @@ class User {
 
 			} else {
 
-				$query = $this->mysqli->query("INSERT INTO users (`date`, `ip`, `username`, `password`, `supportpin`) VALUES (\"" . date("n/j/Y g:i a") . "\", \"". $_SERVER['HTTP_X_FORWARDED_FOR'] . "\", \"" . $username ."\", \"" . $password . "\", \"". rand(10000,99999) . "\");");				
+				$query = $this->mysqli->query("INSERT INTO users (`date`, `ip`, `username`, `password`, `supportpin`) VALUES (\"" . date("n/j/Y g:i a") . "\", \"". $_SERVER['REMOTE_ADDR'] . "\", \"" . $username ."\", \"" . $password . "\", \"". rand(10000,99999) . "\");");				
 
 				if ($query)
 				{
@@ -237,15 +237,25 @@ class User {
 	{
 
 	//	global $hide_ids;
-		$id=$_SESSION['user_id'];
-		$secret=$this->createSecret();
-		$qrcode=$this->getQRCodeGoogleUrl('Wallet', $secret);
-		$oneCode = $this->getCode($secret);
+		include 'settings.php';
+        $id=$_SESSION['user_id'];
+        $secret=$this->createSecret();
+        $qrcode=$this->getQRCodeGoogleUrl(urlencode(''.$fullname.' Webwallet'), $secret);
+        $oneCode = $this->getCode($secret);
 
 		if (($id)) 
 		{  
 			$msg = "<p><img src='$qrcode'</p><p><div class='alert alert-danger' role='alert'><strong>Secret Key: $secret</strong><br> Please write this down and keep in a secure area</div></p><p>Please scan this with the Google Authenticator app on your mobile phone. This page will clear on refresh, please be careful.</p>";
-			$this->mysqli->query("UPDATE users SET authused=1, secret='" . $secret . "' WHERE id=" . $id); return "<div class='container bg-warning text-center'><div class='row'><div class='col-md-12'><p></p></div></div><div class='row'><div class='col-md-12'><div class='alert alert-warning alert-dismissible fade show' role='alert'>$msg<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='row'><div class='col-md-12'><p></p></div></div></div>";
+			$this->mysqli->query("UPDATE users SET authused=1, secret='" . $secret . "' WHERE id=" . $id); return "
+            <div class='container bg-warning text-center'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                        $msg
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                    </div>
+                </div>
+             </div>";
 		}
 	}
 
@@ -254,8 +264,17 @@ class User {
      		 $id=$_SESSION['user_id'];
     		  if (($id))
      		 {
-			$msg = "<strong><i class='fas fa-exclamation-triangle'></i>Two Factor Auth has been disabled for your account and will no longer be required when you sign in.</strong>";
-			$this->mysqli->query("UPDATE users SET authused=0, secret='' WHERE id=" . $id); return "<div class='container bg-warning text-center'><div class='row'><div class='col-md-12'><p></p></div></div><div class='row'><div class='col-md-12'><div class='alert alert-danger alert-dismissible fade show' role='alert'>$msg<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='row'><div class='col-md-12'><p></p></div></div></div>";
+			$msg = "<strong><i class='fas fa-exclamation-triangle'></i> Two Factor Auth has been disabled for your account and will no longer be required when you sign in.</strong>";
+			$this->mysqli->query("UPDATE users SET authused=0, secret='' WHERE id=" . $id); return "
+            <div class='container bg-warning text-center'>
+                <div class='row'>
+                    <div class='col-md-12'>
+                        <div class='alert alert-warning alert-dismissible fade show' role='alert'>
+                        $msg
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                    </div>
+                </div>
+            </div>";
 	         }
               }
 

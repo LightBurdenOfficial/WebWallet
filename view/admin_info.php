@@ -50,7 +50,7 @@ if (!empty($info) && is_array($info))
     <p> </p>
   </div>
 </div>
-<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix text-center form-inline" id="pwdform">
+<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" autocomplete="off" class="clearfix text-center form-inline" id="pwdform">
     <input type="hidden" name="action" value="password" />
     <div class="col-md-6"><input type="password" class="form-control float-right" name="password" placeholder="New password"></div>
     <div class="col-md-6"><button type="submit" class="btn btn-success float-left">Change password</button></div>
@@ -75,7 +75,7 @@ if (!empty($info) && is_array($info))
     <p> </p>
   </div>
 </div>
-<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix text-center form-inline" id="withdrawform">
+<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" autocomplete="off" class="clearfix text-center form-inline" id="withdrawform">
     <input type="hidden" name="action" value="withdraw" />
     <div class="col-md-4"><input type="text" class="form-control" name="address" placeholder="Address"></div>
     <div class="col-md-4"><input type="text" class="form-control" name="amount" placeholder="Amount"></div>

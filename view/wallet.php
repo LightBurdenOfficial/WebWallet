@@ -140,7 +140,7 @@ if ($admin)
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<form class="form-inline text-center" action="index.php" method="POST" id="pwdform">
+			<form class="form-inline text-center" autocomplete="off" action="index.php" method="POST" id="pwdform">
 				<input type="hidden" name="action" value="password" />
 				<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
 					<!-- OLD PASSWORD -->
@@ -210,7 +210,7 @@ if ($admin)
 </div>
 <div class="row">
 	<div class="col-md-12">
-		<form class="form-inline text-center" action="index.php" method="POST"id="withdrawform">
+		<form class="form-inline text-center" autocomplete="off" action="index.php" method="POST"id="withdrawform">
 			<input type="hidden" name="action" value="withdraw" />
 			<input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>"><br>
 				<div class="col-md-6">

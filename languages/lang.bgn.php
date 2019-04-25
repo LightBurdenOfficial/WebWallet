@@ -6,7 +6,7 @@ Language: Bulgarian
 */
 $lang = array();
 //Home Page
-$lang['PAGE_HEADER'] = 'Добре дошъл в ' . $fullname . ' wallet!';
+$lang['PAGE_HEADER'] = 'Добре дошъл в ' . $fullname . ' WebWallet!';
 $lang['FORM_LOGIN'] = 'Влез';
 $lang['FORM_USER'] = 'Потребителско име';
 $lang['FORM_PASS'] = 'Парола';

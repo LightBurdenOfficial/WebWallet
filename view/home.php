@@ -1,4 +1,11 @@
 <?php if (!defined("IN_WALLET")) { die("Auth Error"); } ?>
+                <h1><?php echo $lang['PAGE_HEADER']; ?></h1>
+                <?php
+                if (!empty($error))
+                {
+                    echo "<div class='alert alert-danger alert-dismissible fade show text-center' role='alert'><strong>".$error['message']."</strong><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
+                }
+?>
 
 <div class='container'>
     <div class='col-md-12' style="padding-top: 25px;">
@@ -20,7 +27,7 @@ if (!empty($error)){
     </div>
 
 <div class="col-md-12 text-center">
-    <form action="index.php" method="POST" class="form-inline justify-content-center">
+    <form action="index.php" method="POST" autocomplete="off" class="form-inline justify-content-center">
     <input type="hidden" name="action" value="login" />
 
       <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
@@ -46,7 +53,7 @@ if (!empty($error)){
       </div>
 
         <button type="submit" class="btn btn-primary mb-2"><?php echo $lang['FORM_LOGIN']; ?></button>
-
+        <div class="g-recaptcha" data-sitekey=<?=$public?>></div>
 </form>
 </div>
 </div>
@@ -57,7 +64,7 @@ if (!empty($error)){
     </div>
 
 <div class="col-md-12 text-center">
-    <form action="index.php" method="POST" class="form-inline justify-content-center">
+    <form action="index.php" method="POST" autocomplete="off" class="form-inline justify-content-center">
     <input type="hidden" name="action" value="register" />
 
       <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
@@ -83,7 +90,7 @@ if (!empty($error)){
       </div>
 
         <button type="submit" class="btn btn-primary mb-2"><?php echo $lang['FORM_SIGNUP']; ?></button>
-
+        <div class="g-recaptcha" data-sitekey=<?=$public?>></div>
 </form>
 </div>
 </div>
