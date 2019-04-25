@@ -9,7 +9,7 @@ $lang = array();
 
 //Home Page
 
-$lang['PAGE_HEADER'] = 'Welcome to ' . $fullname . ' wallet!';
+$lang['PAGE_HEADER'] = 'Welcome to ' . $fullname . ' WebWallet!';
 $lang['FORM_LOGIN'] = 'Log In';
 $lang['FORM_USER'] = 'Username';
 $lang['FORM_PASS'] = 'Password';
@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...or create a new account:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Hello';
-$lang['WALLET_BALANCE'] = 'Balance:';
+$lang['WALLET_BALANCE'] = 'Balance';
 $lang['WALLET_USERLINKS'] = 'User Links:';
 $lang['WALLET_LOGOUT'] = 'Logout';
 $lang['WALLET_SUPPORT'] = 'Support';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Fee';
 $lang['WALLET_CONFS'] = 'Confs';
 $lang['WALLET_INFO'] = 'Info';
 $lang['WALLET_PROTECT'] = 'Protect Your Account:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Attention!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Don't use this wallet to store large balances!";
+$lang['WALLET_INFO2'] = 'Wallet Info';
+$lang['BLOCK_COUNT'] = 'Block Count';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Value';
 ?>

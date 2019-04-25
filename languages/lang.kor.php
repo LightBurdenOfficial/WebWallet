@@ -9,7 +9,7 @@ $lang = array();
 
 //Home Page
 
-$lang['PAGE_HEADER'] =  $fullname . ' wallet에 오신 걸 환영합니다!';
+$lang['PAGE_HEADER'] =  $fullname . ' WebWallet에 오신 걸 환영합니다!';
 $lang['FORM_LOGIN'] = '로그인';
 $lang['FORM_USER'] = '사용자 이름';
 $lang['FORM_PASS'] = '암호';
@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...또는 새로운 계정을 만드세요:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = '반갑습니다';
-$lang['WALLET_BALANCE'] = '밸런스:';
+$lang['WALLET_BALANCE'] = '밸런스';
 $lang['WALLET_USERLINKS'] = '사용자 링크:';
 $lang['WALLET_LOGOUT'] = '로그아웃';
 $lang['WALLET_SUPPORT'] = '지원';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = '비용';
 $lang['WALLET_CONFS'] = '확인';
 $lang['WALLET_INFO'] = '정보';
 $lang['WALLET_PROTECT'] = '귀하의 계정 보호 :';
+$lang['WALLET_LG_BALANCE_WARNING'] = '주의!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "큰 저울을 보관할 때이 지갑을 사용하지 마십시오!";
+$lang['WALLET_INFO2'] = '월렛 정보';
+$lang['BLOCK_COUNT'] = '블록 수';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = '값';
 ?>

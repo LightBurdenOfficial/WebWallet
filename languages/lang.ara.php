@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = ' الرسوم ';
 $lang['WALLET_CONFS'] = ' تكوينات ';
 $lang['WALLET_INFO'] = ' معلومات ';
 $lang['WALLET_PROTECT'] = 'حماية حسابك:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'انتباه!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "لا تستخدم هذه المحفظة لتخزين الأرصدة الكبيرة!";
+$lang['WALLET_INFO2'] = 'معلومات المحفظة';
+$lang['BLOCK_COUNT'] = 'كتلة العد';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'القيمة';
 ?>

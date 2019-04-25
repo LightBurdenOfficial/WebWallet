@@ -244,8 +244,8 @@ class User {
 
 		if (($id)) 
 		{  
-			$msg = "Secret Key: $secret *Please write this down and keep in a secure area*<br><img src='$qrcode'<br>Please scan this with the Google Authenticator app on your mobile phone. This page will clear on refresh, please be careful.";
-			$this->mysqli->query("UPDATE users SET authused=1, secret='" . $secret . "' WHERE id=" . $id); return "$msg";
+			$msg = "<p><img src='$qrcode'</p><p><div class='alert alert-danger' role='alert'><strong>Secret Key: $secret</strong><br> Please write this down and keep in a secure area</div></p><p>Please scan this with the Google Authenticator app on your mobile phone. This page will clear on refresh, please be careful.</p>";
+			$this->mysqli->query("UPDATE users SET authused=1, secret='" . $secret . "' WHERE id=" . $id); return "<div class='container bg-warning text-center'><div class='row'><div class='col-md-12'><p></p></div></div><div class='row'><div class='col-md-12'><div class='alert alert-warning alert-dismissible fade show' role='alert'>$msg<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='row'><div class='col-md-12'><p></p></div></div></div>";
 		}
 	}
 
@@ -254,8 +254,8 @@ class User {
      		 $id=$_SESSION['user_id'];
     		  if (($id))
      		 {
-			$msg = "Two Factor Auth has been disabled for your account and will no longer be required when you sign in.";
-			$this->mysqli->query("UPDATE users SET authused=0, secret='' WHERE id=" . $id); return "$msg";
+			$msg = "<strong><i class='fas fa-exclamation-triangle'></i>Two Factor Auth has been disabled for your account and will no longer be required when you sign in.</strong>";
+			$this->mysqli->query("UPDATE users SET authused=0, secret='' WHERE id=" . $id); return "<div class='container bg-warning text-center'><div class='row'><div class='col-md-12'><p></p></div></div><div class='row'><div class='col-md-12'><div class='alert alert-danger alert-dismissible fade show' role='alert'>$msg<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='row'><div class='col-md-12'><p></p></div></div></div>";
 	         }
               }
 

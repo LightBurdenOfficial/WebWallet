@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...или создать новый аккаунт';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Здравствуйте';
-$lang['WALLET_BALANCE'] = 'Баланс:';
+$lang['WALLET_BALANCE'] = 'Баланс';
 $lang['WALLET_USERLINKS'] = 'Пользовательские ссылки';
 $lang['WALLET_LOGOUT'] = 'Выход';
 $lang['WALLET_SUPPORT'] = 'Поддержка';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Комиссия';
 $lang['WALLET_CONFS'] = 'Подтверждения';
 $lang['WALLET_INFO'] = 'Подтверждения';
 $lang['WALLET_PROTECT'] = 'Защитите свой аккаунт:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Внимание!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Не используйте этот кошелек для хранения больших остатков!";
+$lang['WALLET_INFO2'] = 'Информация о кошельке';
+$lang['BLOCK_COUNT'] = 'Количество блоков';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Значение';
 ?>

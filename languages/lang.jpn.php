@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...または新しいアカウントを作成:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'こんにちは';
-$lang['WALLET_BALANCE'] = 'バランス:';
+$lang['WALLET_BALANCE'] = 'バランス';
 $lang['WALLET_USERLINKS'] = 'ユーザーリンク:';
 $lang['WALLET_LOGOUT'] = 'ログアウト';
 $lang['WALLET_SUPPORT'] = 'サポート';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = '手数料';
 $lang['WALLET_CONFS'] = '承認';
 $lang['WALLET_INFO'] = 'インフォ';
 $lang['WALLET_PROTECT'] = 'あなたのアカウントを保護する：';
+$lang['WALLET_LG_BALANCE_WARNING'] = '注意!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "この財布を使って大きな残高を保管しないでください。";
+$lang['WALLET_INFO2'] = 'ウォレット情報';
+$lang['BLOCK_COUNT'] = 'ブロック数';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = '値';
 ?>

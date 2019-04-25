@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = 'Δημιουργία Νέου Λογαριασμού:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Καλώς ήρθατε';
-$lang['WALLET_BALANCE'] = 'Ισορροπία:';
+$lang['WALLET_BALANCE'] = 'Ισορροπία';
 $lang['WALLET_USERLINKS'] = 'Λειτουργίες:';
 $lang['WALLET_LOGOUT'] = 'Έξοδος';
 $lang['WALLET_SUPPORT'] = 'Υποστήριξη';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Κρατήσεις';
 $lang['WALLET_CONFS'] = 'Επιβεβαιώσεις';
 $lang['WALLET_INFO'] = 'Πληροφορίες';
 $lang['WALLET_PROTECT'] = 'Προστατέψτε τον λογαριασμό σας:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Προσοχή!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Μην χρησιμοποιείτε αυτό το πορτοφόλι για να αποθηκεύετε μεγάλες ισορροπίες!";
+$lang['WALLET_INFO2'] = 'Πληροφορίες Πορτοφολιού';
+$lang['BLOCK_COUNT'] = 'Καταμέτρηση μπλοκ';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'αξία';
 ?>

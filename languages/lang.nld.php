@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '... maak een nieuw account';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Hallo';
-$lang['WALLET_BALANCE'] = 'Balans:';
+$lang['WALLET_BALANCE'] = 'Balans';
 $lang['WALLET_USERLINKS'] = 'Gebruiker links:';
 $lang['WALLET_LOGOUT'] = 'Uitloggen';
 $lang['WALLET_SUPPORT'] = 'Support';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Fee';
 $lang['WALLET_CONFS'] = 'Confirmaties';
 $lang['WALLET_INFO'] = 'Informatie';
 $lang['WALLET_PROTECT'] = 'Bescherm uw account:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Aandacht!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Gebruik deze portefeuille niet om grote tegoeden op te slaan!";
+$lang['WALLET_INFO2'] = 'Portefeuille Info';
+$lang['BLOCK_COUNT'] = 'Block Count';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Waarde';
 ?>

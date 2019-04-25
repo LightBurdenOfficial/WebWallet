@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...或者创建一个钱包:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = '你好';
-$lang['WALLET_BALANCE'] = '平衡:';
+$lang['WALLET_BALANCE'] = '平衡';
 $lang['WALLET_USERLINKS'] = '用户链接:';
 $lang['WALLET_LOGOUT'] = '注销';
 $lang['WALLET_SUPPORT'] = '支持';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = '费用';
 $lang['WALLET_CONFS'] = '用户配置';
 $lang['WALLET_INFO'] = '信息';
 $lang['WALLET_PROTECT'] = '保護您的賬戶：';
+$lang['WALLET_LG_BALANCE_WARNING'] = '注意';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "請勿使用此錢包存放大量天平！";
+$lang['WALLET_INFO2'] = '錢包信息';
+$lang['BLOCK_COUNT'] = '塊數';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = '值';
 ?>

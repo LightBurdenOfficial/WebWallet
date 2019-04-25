@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '... hoặc tạo một tài khoản mới:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Chào bạn';
-$lang['WALLET_BALANCE'] = 'Cân đối:';
+$lang['WALLET_BALANCE'] = 'Cân đối';
 $lang['WALLET_USERLINKS'] = ' Đường dẫn truy cập của người dùng:';
 $lang['WALLET_LOGOUT'] = ' Đăng xuất';
 $lang['WALLET_SUPPORT'] = 'Ủng hộ';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Chi phí';
 $lang['WALLET_CONFS'] = 'Xác nhận';
 $lang['WALLET_INFO'] = 'Thông tin';
 $lang['WALLET_PROTECT'] = 'Bảo vệ tài khoản của bạn:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Chú ý!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Đừng sử dụng ví này để lưu trữ số dư lớn!";
+$lang['WALLET_INFO2'] = 'Thông tin ví';
+$lang['BLOCK_COUNT'] = 'Block Count';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Giá trị';
 ?>

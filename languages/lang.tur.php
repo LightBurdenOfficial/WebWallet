@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '... Yeni hesap oluştur:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Merhaba';
-$lang['WALLET_BALANCE'] = 'Denge:';
+$lang['WALLET_BALANCE'] = 'Denge';
 $lang['WALLET_USERLINKS'] = 'Kullanıcı linkleri:';
 $lang['WALLET_LOGOUT'] = 'Çıkış';
 $lang['WALLET_SUPPORT'] = 'Destek';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Komisyon';
 $lang['WALLET_CONFS'] = 'onayları';
 $lang['WALLET_INFO'] = 'Bilgi';
 $lang['WALLET_PROTECT'] = 'Hesabınızı Koruyun:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Dikkat!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Bu cüzdanı büyük dengeler saklamak için kullanmayın!";
+$lang['WALLET_INFO2'] = 'Cüzdan Bilgisi';
+$lang['BLOCK_COUNT'] = 'Block Count';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'değer';
 ?>

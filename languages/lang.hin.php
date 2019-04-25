@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...या नया खाता बनाएं:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'नमस्ते';
-$lang['WALLET_BALANCE'] = 'संतुलन:';
+$lang['WALLET_BALANCE'] = 'संतुलन';
 $lang['WALLET_USERLINKS'] = 'प्रयोगकर्ता लिंक:';
 $lang['WALLET_LOGOUT'] = 'लॉग आउट';
 $lang['WALLET_SUPPORT'] = 'सहयोग';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'शुल्क';
 $lang['WALLET_CONFS'] = 'सत्यापन';
 $lang['WALLET_INFO'] = 'जानकारी';
 $lang['WALLET_PROTECT'] = 'अपना खाता सुरक्षित रखें:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'ध्यान!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "बड़ी मात्रा में स्टोर करने के लिए इस वॉलेट का उपयोग न करें";
+$lang['WALLET_INFO2'] = 'बटुआ जानकारी';
+$lang['BLOCK_COUNT'] = 'ब्लॉक गणना';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'मूल्य';
 ?>

@@ -1,70 +1,89 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 <?php if (!defined("IN_WALLET")) { die("Auth Error"); } ?>
-                <div class='container'>
-                    <div class='col-md-12'>
-                        <h1 style='font-size: 25px;text-align: center;'><?php echo $lang['PAGE_HEADER']; ?></h1>
-                    </div>
-                </div>
-                <?php
-                if (!empty($error))
-                {
-                    echo "<div class='container'><p style='font-weight: bold;font-size:15px; color: red;text-align:center'>" . $error['message']; "</p></div>";
-                }
-                ?>
-                
-                    <div class='container' style="text-align: center;">
-                        <p><?php echo $lang['FORM_LOGIN']; ?>:</p>
-                    </div>
-<center>
-                <form action="index.php" method="POST" class="form-inline">
-                    <input type="hidden" name="action" value="login" />
-                    <!--USERNAME FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon"><i class="fa fa-user-circle"></i></div>
-                        <input type="text" class="form-control" name="username" id="inlineFormInput" placeholder="<?php echo $lang['FORM_USER']; ?>">
-                    </div>
-                    <!--PASS FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                        <input type="password" class="form-control" name="password" id="inlineFormInputGroup" placeholder="<?php echo $lang['FORM_PASS']; ?>">
-                    </div>
-                    <!--2FA FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon"><i class="fa fa-unlock"></i></div>
-                        <input type "text" class="form-control" name="auth" placeholder="<?php echo $lang['FORM_2FA']; ?>">
-                    </div>
-                    <!--Button Login -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3" style="text-align: center;"> 
-                        <br><button type="submit" class="btn btn-info"><?php echo $lang['FORM_LOGIN']; ?></button>
-                    </div>
-                </form>
-</center>
-                <br />
-                 <div class='container' style="text-align: center;">
-                <p><?php echo $lang['FORM_CREATE']; ?></p>
-                </div>
-<center>
-                <form action="index.php" method="POST" class="form-inline">
-                    <input type="hidden" name="action" value="register" />
-                    <!--USERNAME REGISTER FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon">@</div>
-                        <input type="text" class="form-control" name="username" placeholder="<?php echo $lang['FORM_USER']; ?>">
-                    </div>
-                    <!--PASS FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                        <input type="password" class="form-control" name="password" placeholder="<?php echo $lang['FORM_PASS']; ?>">
-                    </div>
-                    <!--RE-PASS FORM -->
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3">
-                        <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                        <input type="password" class="form-control" name="confirmPassword" placeholder="<?php echo $lang['FORM_PASSCONF']; ?>">
-                    </div>
 
-                    <div class="input-group mb-2 mr-sm-2 mb-sm-0 col-md-3" style="text-align: center;"> 
-                        <br><button type="submit" class="btn btn-info"><?php echo $lang['FORM_SIGNUP']; ?></button>
-                    </div>
-                </form>
-</center>
+<div class='container'>
+    <div class='col-md-12' style="padding-top: 25px;">
+        <p class="h2 blockquote text-center"><? echo $lang['PAGE_HEADER']; ?></p>
+    </div>
+    <div class='col-md-12'>
+        <img class="rounded mx-auto d-block" src="https://sperocoin.org/webwallet/view/wallet.png" width="450px">
+    </div>
+</div>
+
+<?
+if (!empty($error)){
+    echo "<div class='container'><p style='font-weight: bold;font-size:15px; color: red;text-align:center'>" . $error['message']; "</p></div>";
+}
+?>
+<div class="row">
+    <div class="col-md-12 text-center">
+        <p class="h3 blockquote text-center"><?php echo $lang['FORM_LOGIN']; ?>:</p>
+    </div>
+
+<div class="col-md-12 text-center">
+    <form action="index.php" method="POST" class="form-inline justify-content-center">
+    <input type="hidden" name="action" value="login" />
+
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-user"></i></div>
+        </div>
+        <input type="text" class="form-control" name="username" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_USER']; ?>">
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-key"></i></div>
+        </div>
+        <input type="password" class="form-control" name="password" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_PASS']; ?>">
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-shield-alt"></i></div>
+        </div>
+        <input type="text" class="form-control" name="auth" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_2FA']; ?>">
+      </div>
+
+        <button type="submit" class="btn btn-primary mb-2"><?php echo $lang['FORM_LOGIN']; ?></button>
+
+</form>
+</div>
+</div>
+
+<div class="row" style="padding-top: 2%">
+    <div class="col-md-12 text-center">
+        <p class="h3 blockquote text-center"><?php echo $lang['FORM_CREATE']; ?></p>
+    </div>
+
+<div class="col-md-12 text-center">
+    <form action="index.php" method="POST" class="form-inline justify-content-center">
+    <input type="hidden" name="action" value="register" />
+
+      <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-user"></i></div>
+        </div>
+        <input type="text" class="form-control" name="username" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_USER']; ?>">
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-key"></i></div>
+        </div>
+        <input type="password" class="form-control" name="password" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_PASS']; ?>">
+      </div>
+
+      <div class="input-group mb-2 mr-sm-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="fas fa-key"></i></div>
+        </div>
+        <input type="password" class="form-control" name="confirmPassword" id="inlineFormInputGroupUsername2" placeholder="<?php echo $lang['FORM_PASSCONF']; ?>">
+      </div>
+
+        <button type="submit" class="btn btn-primary mb-2"><?php echo $lang['FORM_SIGNUP']; ?></button>
+
+</form>
+</div>
+</div>

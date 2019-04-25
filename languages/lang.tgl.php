@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Bayad';
 $lang['WALLET_CONFS'] = 'Confs';
 $lang['WALLET_INFO'] = 'Impormasyon';
 $lang['WALLET_PROTECT'] = 'Protektahan ang Iyong Account:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Pansin!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Huwag gamitin ang wallet na ito upang mag-imbak ng mga malalaking balanse!";
+$lang['WALLET_INFO2'] = 'Impormasyon sa Wallet';
+$lang['BLOCK_COUNT'] = 'Bilangin ang Block';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Halaga';
 ?>

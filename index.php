@@ -32,7 +32,7 @@ if (!empty($_SESSION['user_session'])) {
                 case "new_address":
                 $client->getnewaddress($user_session);
                 $json['success'] = true;
-                $json['message'] = "A new address was added to your wallet";
+                $json['message'] = "A new address was added to your wallet, please update your page for the QRCODE display.";
 		$jsonbal = $client->getBalance($user_session);
 		$jsonbalreserve = $client->getBalance($user_session) - $reserve;
                 if ($jsonbalreserve < 0) {
@@ -143,9 +143,7 @@ if (!empty($_SESSION['user_session'])) {
                 header("Location: index.php");
                 break;
                 case "support":
-                $error['message'] = "Please contact support via email at $support";
-                echo "Support Key: ";
-                echo $_SESSION['user_supportpin'];
+                $error['message'] = "<div class='alert alert-warning alert-dismissible fade show text-center' role='alert'>Please contact support via email at $support, informing the support key: <strong>".$_SESSION['user_supportpin']."</strong><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
                 break;
                 case "authgen":
                 $user = new User($mysqli);
@@ -180,7 +178,7 @@ if (!empty($_SESSION['user_session'])) {
                             case "new_address":
                             $client->getnewaddress($info['username']);
                             $json['success'] = true;
-                            $json['message'] = "A new address was added to your wallet";
+                            $json['message'] = "A new address was added to your wallet, please update your page for the QRCODE display.";
                             $json['balance'] = $client->getBalance($info['username']);
                             $json['addressList'] = $client->getAddressList($info['username']);
                             $json['transactionList'] = $client->getTransactionList($info['username']);

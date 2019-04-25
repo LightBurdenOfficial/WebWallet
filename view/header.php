@@ -10,126 +10,55 @@
         <meta name="description" content="">
         <meta name="author" content="">
         
-        <!-- Bootstrap include stuff -->
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/wallet.css" rel="stylesheet">
-		<link href="assets/css/languages.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.6.0/moment.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+<style type="text/css">
+	body{
+		font-family: 'Ubuntu', sans-serif;
+	}
+</style>
         <!-- End Bootstrap include stuff-->
         <title><?=$fullname?> Wallet </title>
         <link rel="shortcut icon" href="favicon.ico">
     </head>
-    
-    
-    <body>
+<body  style="background-color: black; background-image: url(ao.gif);">
+<div class="container bg-warning" style="padding-top: 5px;">
 
-        <nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<p><a class="navbar-brand" href="index.php"><?=$fullname?> Wallet - <i class="fa fa-warning" style="font-size: 16px"> Don't use this wallet to store large balances!</i></a></p>
-				</div>
-				<div class="nav navbar-nav navbar-right">
-					<div class="dropdown langselect">
-						<button class="btn btn-default navbar-btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-							Language
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							<li>
-								<a href="index.php?lang=en">
-									<span class="lang-sm lang-lbl" lang="en"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=grc">
-									<span class="lang-sm lang-lbl" lang="el"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=zho">
-									<span class="lang-sm lang-lbl" lang="zh"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=ita">
-									<span class="lang-sm lang-lbl" lang="it"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=por">
-									<span class="lang-sm lang-lbl" lang="pt"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=hin">
-									<span class="lang-sm lang-lbl" lang="hi"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=spa">
-									<span class="lang-sm lang-lbl" lang="es"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=tgl">
-									<span class="lang-sm"></span>Tagalog
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=rus">
-									<span class="lang-sm lang-lbl" lang="ru"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=nld">
-									<span class="lang-sm lang-lbl" lang="nl"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=fra">
-									<span class="lang-sm lang-lbl" lang="fr"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=deu">
-									<span class="lang-sm lang-lbl" lang="de"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=tur">
-									<span class="lang-sm lang-lbl" lang="tr"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=vie">
-									<span class="lang-sm lang-lbl" lang="vi"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=jpn">
-									<span class="lang-sm lang-lbl" lang="ja"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=kor">
-									<span class="lang-sm lang-lbl" lang="ko"></span>
-								</a>
-							</li>
-							<li>
-								<a href="index.php?lang=ara">
-									<span class="lang-sm lang-lbl" lang="ar"></span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div><!-- /.container-fluid -->
-        </nav>
-        
-        <div class="jumbotron" style="background-color:#ffe6ad">
-            <div class="container">
+<nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="index.php"><img src="https://sperocoin.org/webwallet/view/wallet.png" width="60px"><span><?=$fullname?></span> WebWallet</a>
+  <ul class="nav nav-pills">
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+		        Language
+		      </a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="index.php?lang=en">ENG</a>
+		        <a class="dropdown-item" href="index.php?lang=grc">GRC</a>
+		        <a class="dropdown-item" href="index.php?lang=zho">ZHO</a>
+		        <a class="dropdown-item" href="index.php?lang=ita">ITA</a>
+		        <a class="dropdown-item" href="index.php?lang=por">PTBR</a>
+		        <a class="dropdown-item" href="index.php?lang=hin">HIN</a>
+		        <a class="dropdown-item" href="index.php?lang=spa">SPA</a>
+		        <a class="dropdown-item" href="index.php?lang=tgl">TGL</a>
+		        <a class="dropdown-item" href="index.php?lang=rus">RUS</a>
+		        <a class="dropdown-item" href="index.php?lang=nld">NLD</a>
+		        <a class="dropdown-item" href="index.php?lang=fra">FRA</a>
+		        <a class="dropdown-item" href="index.php?lang=deu">DEU</a>
+		        <a class="dropdown-item" href="index.php?lang=tur">TUR</a>
+		        <a class="dropdown-item" href="index.php?lang=vie">VIE</a>
+		        <a class="dropdown-item" href="index.php?lang=jpn">JPN</a>
+		        <a class="dropdown-item" href="index.php?lang=kor">KOR</a>
+		        <a class="dropdown-item" href="index.php?lang=ara">ARA</a>
+		      </div>
+		    </li>
+  </ul>
+</nav>

@@ -1,16 +1,29 @@
 <?php if (!defined("IN_WALLET")) { die("Auth Error!"); } ?>
-<a href="?a=home" class="btn btn-default">Go back to admin home</a>
-<br /><br />
+<div class="container" style="padding-top: 5px;">
+  <div class="row">
+    <div class="col-md-12">
+      <a href="?a=home"><button type="submit" class="btn btn-danger float-left"><i class="fas fa-sign-out-alt"></i> Admin Dashboard</button></a>
+    </div>
+  </div>
+</div>
 <?php
 if (!empty($info) && is_array($info))
 {
 ?>
-<p>User <strong><?php echo $info['username']; ?></strong>:</p>
-<table class="table table-bordered table-striped">
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        <strong style="font-size: 20px;">User <strong><?php echo $info['username']; ?></strong>:</strong>
+      </div>
+  </div>
+</div>
+<div class="container">
+<div class="table-responsive text-center">
+      <table class="table table-hover table-dark" id="alist">
 <thead>
    <tr>
-      <td nowrap>Key</td>
-      <td nowrap>Value</td>
+      <td scope="col">Key</td>
+      <td scope="col">Value</td>
    </tr>
 </thead>
 <tbody>
@@ -24,57 +37,122 @@ if (!empty($info) && is_array($info))
    ?>
    </tbody>
 </table>
-<br />
-<p>Set new password:</p>
-<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix" id="pwdform">
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="col-md-12">
+    <strong style="font-size: 20px;"> Set new password:</strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p> </p>
+  </div>
+</div>
+<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix text-center form-inline" id="pwdform">
     <input type="hidden" name="action" value="password" />
-    <div class="col-md-4"><input type="password" class="form-control" name="password" placeholder="New password"></div>
-    <div class="col-md-2"><button type="submit" class="btn btn-default">Change password</button></div>
+    <div class="col-md-6"><input type="password" class="form-control float-right" name="password" placeholder="New password"></div>
+    <div class="col-md-6"><button type="submit" class="btn btn-success float-left">Change password</button></div>
 </form>
-<p id="pwdmsg"></p>
-<br />
-<p>Withdraw funds:</p>
-<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix" id="withdrawform">
+<div class="row">
+  <div class="col-md-12">
+    <p id="pwdmsg"></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <strong style="font-size: 20px;"> Withdraw funds:</strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p> </p>
+  </div>
+</div>
+<form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" class="clearfix text-center form-inline" id="withdrawform">
     <input type="hidden" name="action" value="withdraw" />
     <div class="col-md-4"><input type="text" class="form-control" name="address" placeholder="Address"></div>
-    <div class="col-md-2"><input type="text" class="form-control" name="amount" placeholder="Amount"></div>
-    <div class="col-md-2"><button type="submit" class="btn btn-default">Withdraw</button></div>
+    <div class="col-md-4"><input type="text" class="form-control" name="amount" placeholder="Amount"></div>
+    <div class="col-md-4"><button type="submit" class="btn btn-success">Withdraw</button></div>
 </form>
-<p id="withdrawmsg"></p>
-<br />
-<p>Addresses:</p>
+<div class="row">
+  <div class="col-md-12">
+    <p id="withdrawmsg"></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <strong style="font-size: 20px;"> Addresses:</strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p> </p>
+  </div>
+</div>
 <form action="<?php echo '?a=info&i=' . $info['id']; ?>" method="POST" id="newaddressform">
    <input type="hidden" name="action" value="new_address" />
-   <button type="submit" class="btn btn-default">Get a new address</button>
+   <button type="submit" class="btn btn-info">Get a new address</button>
 </form>
-<p id="newaddressmsg"></p>
-<br />
-<table class="table table-bordered table-striped" id="alist">
-<thead>
-<tr>
-<td>Address:</td>
-</tr>
-</thead>
-<tbody>
-<?php
-foreach ($addressList as $address)
-{
-echo "<tr><td>".$address."</td></tr>\n";
-}
-?>
-</tbody>
-</table>
-<p>Last 10 transactions:</p>
-<table class="table table-bordered table-striped" id="txlist">
+<div class="row">
+  <div class="col-md-12">
+    <p id="newaddressmsg"></p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p> </p>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover table-dark" id="alist">
+  <thead>
+  <tr>
+  <th scope="col">Address:</th>
+  </tr>
+  </thead>
+  <tbody>
+  <?php
+  foreach ($addressList as $address)
+  {
+  echo "<tr><td>".$address."</td></tr>\n";
+  }
+  ?>
+  </tbody>
+  </table>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <strong style="font-size: 20px;"> Last 10 transactions:</strong>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <p> </p>
+  </div>
+</div>
+<div class="table-responsive">
+  <table class="table table-hover table-dark" id="txlist">
 <thead>
    <tr>
-      <td nowrap>Date</td>
-      <td nowrap>Address</td>
-      <td nowrap>Type</td>
-      <td nowrap>Amount</td>
-      <td nowrap>Fee</td>
-      <td nowrap>Confs</td>
-      <td nowrap>Info</td>
+      <th scope="col">Date</th>
+      <th scope="col">Address</th>
+      <th scope="col">Type</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Fee</th>
+      <th scope="col">Confs</th>
+      <th scope="col">Info</th>
    </tr>
 </thead>
 <tbody>
@@ -89,7 +167,7 @@ echo "<tr><td>".$address."</td></tr>\n";
                <td>'.abs($transaction['amount']).'</td>
                <td>'.$transaction['fee'].'</td>
                <td>'.$transaction['confirmations'].'</td>
-               <td><a href="' . $blockchain_url, $transaction['txid'] . '" target="_blank">Info</a></td>
+               <td><a href="' . $blockchain_tx_url, $transaction['txid'] . '" target="_blank">Info</a></td>
             </tr>';
    }
    ?>
@@ -102,8 +180,12 @@ echo "<tr><td>".$address."</td></tr>\n";
    <?php
 }
 ?>
+</div>
+</div>
+
+
 <script type="text/javascript">
-var blockchain_url = "<?=$blockchain_url?>";
+var blockchain_tx_url = "<?=$blockchain_tx_url?>";
 $("#withdrawform input[name='action']").first().attr("name", "jsaction");
 $("#newaddressform input[name='action']").first().attr("name", "jsaction");
 $("#pwdform input[name='action']").first().attr("name", "jsaction");
@@ -223,7 +305,7 @@ function updateTables(json)
                <td>' + Math.abs(json.transactionList[i]['amount']) + '</td> \
                <td>' + json.transactionList[i]['fee'] + '</td> \
                <td>' + json.transactionList[i]['confirmations'] + '</td> \
-               <td><a href="' + blockchain_url.replace("%s", json.transactionList[i]['txid']) + '" target="_blank">Info</a></td> \
+               <td><a href="' + blockchain_tx_url.replace("%s", json.transactionList[i]['txid']) + '" target="_blank">Info</a></td> \
             </tr>');
    }
 }

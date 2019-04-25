@@ -9,7 +9,7 @@ $lang = array();
 
 //Home Page
 
-$lang['PAGE_HEADER'] = 'Benvenuto nel ' . $fullname . ' wallet!';
+$lang['PAGE_HEADER'] = 'Benvenuto nel ' . $fullname . ' WebWallet!';
 $lang['FORM_LOGIN'] = 'Log In';
 $lang['FORM_USER'] = 'Username';
 $lang['FORM_PASS'] = 'Password';
@@ -21,7 +21,7 @@ $lang['FORM_CREATE'] = '...o crea un nuovo account:';
 // Wallet Page
 
 $lang['WALLET_HELLO'] = 'Ciao';
-$lang['WALLET_BALANCE'] = 'Saldo:';
+$lang['WALLET_BALANCE'] = 'Saldo';
 $lang['WALLET_USERLINKS'] = 'Link utente:';
 $lang['WALLET_LOGOUT'] = 'Logout';
 $lang['WALLET_SUPPORT'] = 'Supporto';
@@ -47,4 +47,11 @@ $lang['WALLET_FEE'] = 'Tassa';
 $lang['WALLET_CONFS'] = 'Conferme';
 $lang['WALLET_INFO'] = 'Info';
 $lang['WALLET_PROTECT'] = 'Proteggi il tuo account:';
+$lang['WALLET_LG_BALANCE_WARNING'] = 'Attenzione!';
+$lang['WALLET_LG_BALANCE_WARNING_2'] = "Non usare questo portafoglio per conservare grandi saldi!";
+$lang['WALLET_INFO2'] = 'Informazioni sul portafoglio';
+$lang['BLOCK_COUNT'] = 'Numero di blocchi';
+$lang['WALLET_VERSION'] = 'Wallet Version';
+$lang['WALLET_PROTOCOL'] = 'Wallet Protocol';
+$lang['WALLET_MONEY'] = 'Valore';
 ?>
