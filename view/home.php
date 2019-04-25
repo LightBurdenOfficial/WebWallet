@@ -1,11 +1,4 @@
 <?php if (!defined("IN_WALLET")) { die("Auth Error"); } ?>
-                <h1><?php echo $lang['PAGE_HEADER']; ?></h1>
-                <?php
-                if (!empty($error))
-                {
-                    echo "<div class='alert alert-danger alert-dismissible fade show text-center' role='alert'><strong>".$error['message']."</strong><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div>";
-                }
-?>
 
 <div class='container'>
     <div class='col-md-12' style="padding-top: 25px;">
